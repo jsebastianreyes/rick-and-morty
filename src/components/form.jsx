@@ -50,7 +50,7 @@ function Form({getMovies, query}) {
     const debouncedGetCharacter =  useCallback(
         debounce((query) => {
             getMovies(query)
-        }, 1000)
+        }, 300)
     ,[]) 
 
     //TODO: Hacer debounce
