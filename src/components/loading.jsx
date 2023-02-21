@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import gif from '../assets/rick-and-morty-dance.gif'
 
 const LoadingStyled = styled.div`
 
@@ -14,7 +15,7 @@ const LoadingStyled = styled.div`
 function Loading() {
     return (
         <LoadingStyled>
-         <img src='../../public/rick-and-morty-dance.gif' height="300"/>
+         <img src={gif} height="300"/>
         </LoadingStyled>
     )
 }
