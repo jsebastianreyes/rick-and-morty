@@ -88,7 +88,6 @@ const CharacterStyled = styled.article`
 `
 
 function Character(character) {
-//     console.log(character)
     return (
         <CharacterStyled>
             <img className="img" src={character.image}  alt={character.name} width="200"/>

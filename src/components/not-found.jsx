@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import img from '../assets/morty-sad.png'
 
 const NotFoundStyled = styled.div`
     margin-block: 2rem;
@@ -33,7 +34,7 @@ function NotFound() {
         <NotFoundStyled>
           <h1>UPSSSS! 🙁</h1>  
           <p>No encontramos resultados para tu búsqueda</p>
-          <img src="../../public/morty-sad.png" alt="" srcset="" />
+          <img src={img} alt="" srcset="" />
          
         </NotFoundStyled>
     )

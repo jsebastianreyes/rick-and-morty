@@ -21,11 +21,12 @@ const CharactersStyled = styled.main`
         }
 `
 
-function Characters({listMovies}) {
-    if(listMovies){
+function Characters({listCharacters}) {
+    
+    if(listCharacters){
         return( 
         <CharactersStyled>
-                        { listMovies?.map((item) => {
+                        { listCharacters?.map((item) => {
                             return <Character key={item.id} {...item}/>
                         }) }
                 </CharactersStyled>

@@ -26,7 +26,6 @@ const NavigationStyled = styled.div`
 `
 
 function Navigation({info, query, getMovies}) {
-  // console.log(`Query: ${query}`)
   const counter = useRef(1)
   const previusSearch = useRef(query)
   const prev = info.prev ? '' : 'disabled'
@@ -43,9 +42,7 @@ function Navigation({info, query, getMovies}) {
       top: 380, 
       behavior: 'smooth'
     });
-    console.log(counter.current)
-    console.log(`prev:${previusSearch.current}`)
-    console.log(`QUERY ${query}`)
+ 
    }
 
    function handlePrev(){
