@@ -65,8 +65,8 @@ function Form({getMovies, query}) {
     
     function handleSubmit(e){
         e.preventDefault()
+        console.log(search)
         const formData = new FormData(e.target)
-
         if(formData.get('search') != query){
         getMovies(formData.get('search'))
         }

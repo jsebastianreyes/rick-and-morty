@@ -5,14 +5,20 @@ export function useMovies(){
   const [movies, setmovies] = useState([])
   const [info, setInfo] = useState([])
   const [query, setQuery] = useState(null)
+  const [loading, setLoading] = useState(null)
 
   const getMovies = useCallback(
 
     async (character, numPage) => {
+      //loading
+      setLoading(true)
       const {listMovies, info} = await getMoviesAPI(character, numPage)
+      setLoading(false)
+      //loading
       setmovies(listMovies)
       setInfo(info)
       setQuery(character)
+      // alert('no')
   }, []
 
   )
@@ -22,5 +28,5 @@ export function useMovies(){
       },[])  
 
 
-    return {movies, getMovies, info, query}
+    return {movies, getMovies, info, query, loading}
 }
