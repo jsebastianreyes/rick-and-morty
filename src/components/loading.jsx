@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const LoadingStyled = styled.div`
 
- block-size: 30rem;
+ block-size: 25gitrem;
  background: white;
  display: flex;
  /* flex-direction: column; */
