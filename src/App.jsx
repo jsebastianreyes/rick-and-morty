@@ -9,7 +9,7 @@ import Loading from './components/loading'
 
 function App() {
   const {movies, getMovies, info, query, loading} = useMovies()  
-  console.log('hey')
+  //console.log('hey')
   
   return (
     <Layout>
