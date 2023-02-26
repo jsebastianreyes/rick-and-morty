@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import debounce from 'just-debounce-it'
 
 const FormStyled = styled.form`
@@ -46,6 +46,10 @@ const FormStyled = styled.form`
 
 
 function Form({getMovies, query}) {
+    
+    useEffect(()=> {
+        console.log('cambio')
+    },[getMovies])
 
     const debouncedGetCharacter =  useCallback(
         debounce((query) => {
