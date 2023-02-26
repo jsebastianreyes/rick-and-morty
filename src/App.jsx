@@ -3,15 +3,13 @@ import Form from './components/form'
 import Characters from './components/characters'
 import Header from './components/header'
 import Navigation from './components/navigation'
-import { useMovies, useEffect } from './hooks/useMovies'
+import { useMovies} from './hooks/useMovies'
 import Loading from './components/loading'
 
 
 function App() {
-  const {movies, getMovies, info, query, loading} = useMovies()
-    useEffect(()=>{
-    console.log('hey')
-  })
+  const {movies, getMovies, info, query, loading} = useMovies()  
+  console.log('hey')
   
   return (
     <Layout>
