@@ -45,7 +45,7 @@ const FormStyled = styled.form`
 `
 
 
-function Form({getMovies, query}) {
+function Form({getMovies}) {
     
     useEffect(()=> {
         console.log('cambio')
