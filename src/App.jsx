@@ -3,7 +3,7 @@ import Form from './components/form'
 import Characters from './components/characters'
 import Header from './components/header'
 import Navigation from './components/navigation'
-import { useMovies, useEffecft } from './hooks/useMovies'
+import { useMovies, useEffect } from './hooks/useMovies'
 import Loading from './components/loading'
 
 
