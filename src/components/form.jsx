@@ -48,11 +48,10 @@ const FormStyled = styled.form`
 function Form({getMovies}) {
     
 
-    const debouncedGetCharacter =  useCallback(
+    const debouncedGetCharacter =  
         debounce((query) => {
             getMovies(query)
         }, 300)
-    ,[]) 
 
     //TODO: Hacer debounce
     
