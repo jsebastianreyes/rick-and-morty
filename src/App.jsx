@@ -9,9 +9,9 @@ import Loading from './components/loading'
 
 function App() {
   const {movies, getMovies, info, query, loading} = useMovies()
-  useEffect(()=> {
-    console.log('Yess 🤓')
-  },[query])
+    useEffect(()=>{
+    console.log('hey')
+  })
   
   return (
     <Layout>
