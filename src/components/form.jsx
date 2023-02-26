@@ -45,9 +45,8 @@ const FormStyled = styled.form`
 `
 
 
-function Form({getMovies, query}) {
+function Form({getMovies}) {
     
-    console.log(query)
 
     const debouncedGetCharacter =  useCallback(
         debounce((query) => {
