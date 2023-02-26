@@ -49,13 +49,12 @@ function Form({getMovies, query}) {
     
     useEffect(()=> {
         console.log('cambio')
-    },[getMovies, query])
+    },[getMovies])
 
-    const debouncedGetCharacter =  useCallback(
+    const debouncedGetCharacter = 
         debounce((query) => {
             getMovies(query)
         }, 300)
-    ,[]) 
 
     //TODO: Hacer debounce
     
